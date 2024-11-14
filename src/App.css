@@ -18,6 +18,8 @@
 
 .History-container {
   /* background-color: yellow; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .Numpad-container {
