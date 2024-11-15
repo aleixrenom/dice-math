@@ -1,10 +1,5 @@
 import { ReactNode } from "react";
-
-interface EquationProps {
-  firstNum?: number;
-  secondNum?: number;
-  answer?: number;
-}
+import { EquationProps } from "../types";
 
 const Member = ({ children }: { children: ReactNode }) => (
   <span style={{ margin: "0px 10px" }}>{children}</span>

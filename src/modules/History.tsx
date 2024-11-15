@@ -1,9 +1,4 @@
-interface CompletedEquationProps {
-  firstNum: number;
-  secondNum: number;
-  answer: number;
-  correct: boolean;
-}
+import { CompletedEquationProps } from "../types";
 
 const CompletedEquation = ({
   firstNum,
