@@ -42,6 +42,15 @@ function App() {
     }
   };
 
+  const sendAnswer = () => {
+    if (givenAnswer === correctAnswer) {
+      console.log("Correct!");
+    } else {
+      console.log("Wrong!");
+    }
+    resetEquation();
+  };
+
   const buttonsPlaceholder: NumbuttonProps[] = [
     { text: "1", onClick: () => handleNumInput("1") },
     { text: "2", onClick: () => handleNumInput("2") },
@@ -54,7 +63,7 @@ function App() {
     { text: "9", onClick: () => handleNumInput("9") },
     { text: "<", onClick: () => eraseNumber() },
     { text: "0", onClick: () => handleNumInput("0") },
-    { text: "*", onClick: () => resetEquation() },
+    { text: ">", onClick: () => sendAnswer() },
   ];
 
   return (
